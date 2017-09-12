@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Unisharp\Laravelfilemanager\Events\ImageIsUploading;
-use Unisharp\Laravelfilemanager\Events\ImageWasUploaded;
+use App\Providers\ImageWasUploaded;
 use Unisharp\Laravelfilemanager\controllers\LfmController;
 
 use App\Post;

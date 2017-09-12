@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use Unisharp\Laravelfilemanager\Events\ImageWasUploaded;
+use App\Providers\ImageWasUploaded;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 

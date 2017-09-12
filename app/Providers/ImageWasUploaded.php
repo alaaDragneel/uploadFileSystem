@@ -14,15 +14,25 @@ class ImageWasUploaded
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
+    private $path;
+
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
-    }
+     public function __construct($path)
+     {
+         $this->path = $path;
+     }
+
+     /**
+      * @return string
+      */
+     public function path()
+     {
+         return $this->path;
+     }
 
     /**
      * Get the channels the event should broadcast on.
